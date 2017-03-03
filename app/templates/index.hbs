@@ -1,5 +1,8 @@
 <h1>Welcome to the question and answer board</h1>
-<p> Post a question by clicking the add question button.</p>
+<p> Post a question by clicking the New Question button.</p>
+
+{{new-question saveQuestion="saveQuestion"}}
+
 <p> Click on the existing question to provide an answer.</p>
 
 <ul>
@@ -7,5 +10,3 @@
       {{question-tile question=question}}
     {{/each}}
 </ul>
-
-{{new-question saveQuestion="saveQuestion"}}
