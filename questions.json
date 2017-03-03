@@ -6,5 +6,12 @@
     "content": "question 2",
     "author": "author 2",
     "note": "note"
-  }
-]}
+}],
+"answers":[{
+  "content": "answer 1",
+  "author": "author 1"
+  },{
+  "content": "answer 1",
+  "author": "author 1"
+  }]
+}

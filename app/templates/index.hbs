@@ -7,8 +7,16 @@
   <p> Click on the below question banks for details.</p>
 
   <ol>
-      {{#each model as |question|}}
+      {{#each model.questions as |question|}}
         {{question-tile question=question}}
       {{/each}}
   </ol>
+
+<h2>Answer Sections</h2>
+
+  <ul>
+    {{#each model.answers as |answer|}}
+      <li>{{answer.content}} by {{answer.author}}</li>
+    {{/each}}
+  </ul>
 </div>
