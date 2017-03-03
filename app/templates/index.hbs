@@ -4,7 +4,7 @@
 
   {{new-question saveQuestion="saveQuestion"}}
 
-  <p> Click on the below question banks for details.</p>
+  <p> Click on the below question for details.</p>
 
   <ol>
       {{#each model.questions as |question|}}
@@ -12,11 +12,5 @@
       {{/each}}
   </ol>
 
-<h2>Answer Sections</h2>
 
-  <ul>
-    {{#each model.answers as |answer|}}
-      <li>{{answer.content}} by {{answer.author}}</li>
-    {{/each}}
-  </ul>
 </div>

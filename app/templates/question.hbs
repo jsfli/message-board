@@ -1,4 +1,4 @@
-<h2>Question and Answer Page</h2>
+<h2>Question Details</h2>
 <h4>Question: {{model.content}}</h4>
 <p>Posted by:{{model.author}}</p>
 <p>Additional Notes:{{model.note}}</p>
@@ -6,4 +6,14 @@
 {{update-question question=model updateQuestion="updateQuestion"}}
 
 <br>
+
+<h3>Answers Section</h3>
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer.author}} - {{answer.content}}<br>
+  {{/each}}
+</ul>
+{{new-answer question=model saveAnswer="saveAnswer"}}
+<hr>
+
 {{#link-to 'index'}}Return to the main page{{/link-to}}

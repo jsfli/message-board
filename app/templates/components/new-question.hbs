@@ -4,17 +4,17 @@
     <form>
       <div class="form-group">
         <label for="content">New Question: </label>
-        {{input value=content id="content"}}
+        {{input value=content id="content" placeholder="question"}}
       </div>
 
       <div class="form-group">
         <label for="author">Author: </label>
-        {{input value=author id="author"}}
+        {{input value=author id="author" placeholder="author"}}
       </div>
 
       <div class="form-group">
         <label for="note">Additional Note: </label>
-        {{input value=note id="note"}}
+        {{input value=note id="note" placeholder="note"}}
       </div>
 
       <button {{action 'saveQuestion'}}>Save</button>
