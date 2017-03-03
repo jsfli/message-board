@@ -1,4 +1,6 @@
 <h2>Question and Answer Page</h2>
-{{model.content}}{{model.author}}{{model.note}}
+<h6>Question: {{model.content}}</h6>
+<p>Posted by:{{model.author}}</p>
+<p>Additional Notes:{{model.note}}</p>
 <br>
 {{#link-to 'index'}}Return to the main page{{/link-to}}
