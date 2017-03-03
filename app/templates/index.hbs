@@ -1,12 +1,14 @@
-<h1>Welcome to the question and answer board</h1>
-<p> Post a question by clicking the New Question button.</p>
+<div class="container">
+  <h1>Welcome to the question and answer board</h1>
+  <p> Post a question by clicking the New Question button.</p>
 
-{{new-question saveQuestion="saveQuestion"}}
+  {{new-question saveQuestion="saveQuestion"}}
 
-<p> Click on the below question banks for details.</p>
+  <p> Click on the below question banks for details.</p>
 
-<ul>
-    {{#each model as |question|}}
-      {{question-tile question=question}}
-    {{/each}}
-</ul>
+  <ol>
+      {{#each model as |question|}}
+        {{question-tile question=question}}
+      {{/each}}
+  </ol>
+</div>
